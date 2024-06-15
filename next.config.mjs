@@ -9,6 +9,10 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "cdn-i.pr.trt.com.tr"
+      },
+      {
+        protocol: "https",
+        hostname: "https://images-cdn.trtworld.com"
       }
     ]
   }
