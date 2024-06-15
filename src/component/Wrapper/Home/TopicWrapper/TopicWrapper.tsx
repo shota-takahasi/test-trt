@@ -7,42 +7,37 @@ import { useState } from "react";
 export const TopicWrapper = () => {
   const [active, setActive] = useState("topics");
 
+  const topics = [
+    {
+      label: "Topics", tag: "topics"
+    },
+    {
+      label: "Azerbaijan-Armenia dispute", tag: "dispute"
+    },
+    {
+      label: "Covid-19", tag: "covid"
+    },
+    {
+      label: "Eastern mediterranean", tag: "eastern"
+    },
+    {
+      label: "My turkey", tag: "turkey"
+    },
+  ];
+
   return (
     <div className={styles.container}>
-      <div
-        className={clsx(styles.item, active == "topics" ? styles.active : styles.normal)}
-        onClick={() => setActive("topics")}
-      >
-        Topics
-      </div>
-
-      <div
-        className={clsx(styles.item, active == "dispute" ? styles.active : styles.normal)}
-        onClick={() => setActive("dispute")}
-      >
-        Azerbaijan-Armenia dispute
-      </div>
-
-      <div
-        className={clsx(styles.item, active == "covid" ? styles.active : styles.normal)}
-        onClick={() => setActive("covid")}
-      >
-        covid-19
-      </div>
-
-      <div
-        className={clsx(styles.item, active == "eastern" ? styles.active : styles.normal)}
-        onClick={() => setActive("eastern")}
-      >
-        eastern mediterranean
-      </div>
-
-      <div
-        className={clsx(styles.item, active == "turkey" ? styles.active : styles.normal)}
-        onClick={() => setActive("turkey")}
-      >
-        my turkey
-      </div>
+      {topics && topics.map((item: any) => {
+        return (
+          <div
+            key={crypto.randomUUID()}
+            className={clsx(styles.item, active == item.tag ? styles.active : styles.normal)}
+            onClick={() => setActive(item.tag)}
+          >
+            {item.label}
+          </div>
+        );
+      })}
     </div>
   );
 };
