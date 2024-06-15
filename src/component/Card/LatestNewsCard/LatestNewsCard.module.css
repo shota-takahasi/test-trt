@@ -38,3 +38,9 @@
 
   min-height: 64px;
 }
+
+@media (width <= 640px) {
+  .description {
+    min-height: fit-content;
+  }
+}
