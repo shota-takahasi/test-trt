@@ -1,9 +1,16 @@
-import Image from "next/image";
+import { ContentWrapper, LatestWrapper, TopicWrapper } from "@/component/Wrapper/Home";
 import styles from "./page.module.css";
 
 const Home = () => {
   return (
-    <main>
+    <main className={styles.main}>
+      <div className={styles.section}>
+        <div className={styles.container}>
+          <TopicWrapper />
+          <ContentWrapper />
+          <LatestWrapper />
+        </div>
+      </div>
     </main>
   );
 };
