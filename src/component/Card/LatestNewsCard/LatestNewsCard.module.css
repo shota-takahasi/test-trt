@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.number {
+  font-size: 48px;
+  font-weight: 700;
+  color: #BFC3C9;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #0089CC;
+}
+
+.description {
+  font-size: 18px;
+  color: #22262A;
+}

@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #22262A;
+  text-transform: uppercase;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.card {
+  width: 100%;
+}
+
+.card:nth-child(even) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+.card:nth-child(odd) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+.card:first-child {
+  padding-left: 0;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+.card:nth-last-child(1) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: none;
+}
