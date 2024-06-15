@@ -21,25 +21,27 @@
   width: 100%;
 }
 
-.card:nth-child(even) {
-  padding-left: 24px;
-  padding-right: 24px;
-  border-right: 1px solid #E1E6EB
-}
-
-.card:nth-child(odd) {
-  padding-left: 24px;
-  padding-right: 24px;
-  border-right: 1px solid #E1E6EB
-}
-
-.card:first-child {
+.card:nth-child(1) {
   padding-left: 0;
   padding-right: 24px;
   border-right: 1px solid #E1E6EB
 }
 
-.card:nth-last-child(1) {
+.card:nth-child(2) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+
+.card:nth-child(3) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+
+.card:nth-child(4) {
   padding-left: 24px;
   padding-right: 24px;
   border-right: none;
