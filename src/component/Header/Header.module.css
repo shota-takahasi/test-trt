@@ -1,0 +1,97 @@
+.header {
+  background-color: #147cb2;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 48px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 18px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (width <= 768px) {
+  .content {
+    gap: 24px;
+  }
+}
+
+.linkContent {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+@media (width <= 768px) {
+  .linkContent {
+    display: none;
+  }
+}
+
+.link {
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.live {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.status {
+  width: 6px;
+  height: 6px;
+  background-color: red;
+  border-radius: 100%;
+
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.search {
+  height: 48px;
+  width: 48px;
+  background-color: #009ec7;
+  position: relative;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
