@@ -3,6 +3,12 @@
   flex-direction: row;
 }
 
+@media (width <= 1024px) {
+  .container {
+    display: none;
+  }
+}
+
 .item {
   font-size: 12px;
   letter-spacing: 1px;
