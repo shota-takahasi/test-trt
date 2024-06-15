@@ -1,4 +1,4 @@
-import { NormalNewsCard } from "@/component";
+import { AuthorNewsCard, NormalNewsCard, TopicNewsCard } from "@/component";
 import styles from "./ContentWrapper.module.css";
 
 export const ContentWrapper = () => {
@@ -21,7 +21,15 @@ export const ContentWrapper = () => {
           <NormalNewsCard />
           <NormalNewsCard />
         </div>
-        <div className={styles.section}></div>
+
+        <div className={styles.section}>
+          <AuthorNewsCard />
+          <AuthorNewsCard />
+          <AuthorNewsCard />
+          <TopicNewsCard />
+          <TopicNewsCard />
+          <TopicNewsCard />
+        </div>
       </div>
 
       <div className={styles.bottom}></div>
