@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.active {
+  color: #22262a;
+}
+
+.normal {
+  color: #63676c;
+}
+
+.item:nth-child(even) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+.item:nth-child(odd) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+.item:first-child {
+  padding-left: 0;
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB
+}
+
+.item:nth-last-child(1) {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-right: none;
+}
