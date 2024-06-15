@@ -6,6 +6,11 @@
   gap: 16px;
 }
 
+.container:hover {
+  opacity: .75;
+  transition: all .3s ease;
+}
+
 .number {
   font-size: 48px;
   font-weight: 700;
@@ -30,4 +35,6 @@
 .description {
   font-size: 18px;
   color: #22262A;
+
+  min-height: 64px;
 }

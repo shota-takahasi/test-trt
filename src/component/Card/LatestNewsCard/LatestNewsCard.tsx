@@ -1,21 +1,22 @@
+import Link from "next/link";
 import styles from "./LatestNewsCard.module.css";
 
-export const LatestNewsCard = () => {
+export const LatestNewsCard = (props: { data: any, order: number }) => {
   return (
-    <div className={styles.container}>
+    <Link href="" className={styles.container}>
       <div className={styles.number}>
-        1
+        {props?.order}
       </div>
 
       <div className={styles.content}>
         <div className={styles.title}>
-          Opinion
+          {props?.data?.title}
         </div>
 
         <div className={styles.description}>
-          Nepal should stop selling its youth to the Indian and British armies
+          {props?.data?.description}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
