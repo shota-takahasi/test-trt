@@ -1,11 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 
-const Home = () => {
+const Article = () => {
   return (
     <main>
     </main>
   );
 };
 
-export default Home;
+export default Article;
