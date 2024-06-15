@@ -7,7 +7,7 @@ export const Header = () => {
       <div className={styles.container}>
         <img
           className={styles.logo}
-          src="./svg/header-logo.svg"          
+          src="./svg/header-logo.svg"
           alt="logo"
         />
 
@@ -28,20 +28,32 @@ export const Header = () => {
             <Link href="/" className={styles.link}>
               Video
             </Link>
+
+            <Link href="/" className={styles.live}>
+              <span className={styles.status}></span>
+              <div className={styles.link}>Live</div>
+            </Link>
+
+            <div className={styles.search}>
+              <img
+                className={styles.searchIcon}
+                src="./svg/search.svg"
+                alt="search"
+              />
+            </div>
           </div>
 
-          <Link href="/" className={styles.live}>
-            <span className={styles.status}></span>
-            <div className={styles.link}>Live</div>
-          </Link>
+          <img
+            className={styles.mobileMenu}
+            src="./svg/search.svg"
+            alt="menu"
+          />
 
-          <div className={styles.search}>
-            <img
-              className={styles.searchIcon}
-              src="./svg/search.svg"
-              alt="search"
-            />
-          </div>
+          <img
+            className={styles.mobileMenu}
+            src="./svg/menu.svg"
+            alt="menu"
+          />
         </div>
       </div>
     </div>

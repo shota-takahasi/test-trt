@@ -94,4 +94,21 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  width: 18px;
+  height: 18px;
+}
+
+.mobileMenu {
+  width: 24px;
+  height: 24px;
+
+  display: none;
+}
+
+
+@media (width <= 768px) {
+  .mobileMenu {
+    display: block;
+  }
 }
