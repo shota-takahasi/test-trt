@@ -7,6 +7,12 @@
   margin-bottom: 36px;
 }
 
+@media (width <= 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .content {
   width: 75%;
 
@@ -15,8 +21,20 @@
   gap: 12px;
 }
 
+@media (width <= 1024px) {
+  .content {
+    width: 100%;
+  }
+}
+
 .space {
   width: 25%;
+}
+
+@media (width <= 1024px) {
+  .space {
+    display: none;
+  }
 }
 
 .title {
@@ -25,11 +43,36 @@
   color: black;
 }
 
+@media (width <= 1024px) {
+  .title {
+    font-size: 36px;
+  }
+}
+
+@media (width <= 640px) {
+  .title {
+    font-size: 28px;
+  }
+}
+
 .description {
   font-size: 24px;
   font-weight: 400;
   color: #63676C;
 }
+
+@media (width <= 1024px) {
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (width <= 640px) {
+  .description {
+    font-size: 18px;
+  }
+}
+
 
 .category {
   display: flex;
