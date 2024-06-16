@@ -18,17 +18,35 @@ export const ContentWrapper = () => {
         </div>
 
         <div className={styles.section}>
-          <NormalNewsCard />
-          <NormalNewsCard />
+          <div className={styles.divider}>
+            <NormalNewsCard />
+          </div>
+
+          <div className={styles.divider}>
+            <NormalNewsCard />
+          </div>
         </div>
 
         <div className={styles.section}>
-          <AuthorNewsCard />
-          <AuthorNewsCard />
-          <AuthorNewsCard />
-          <TopicNewsCard />
-          <TopicNewsCard />
-          <TopicNewsCard />
+          <div className={styles.divider}>
+            <AuthorNewsCard />
+          </div>
+          <div className={styles.divider}>
+            <AuthorNewsCard />
+          </div>
+          <div className={styles.divider}>
+            <AuthorNewsCard />
+          </div>
+
+          <div className={styles.divider}>
+            <TopicNewsCard />
+          </div>
+          <div className={styles.divider}>
+            <TopicNewsCard />
+          </div>
+          <div className={styles.divider}>
+            <TopicNewsCard />
+          </div>
         </div>
       </div>
 

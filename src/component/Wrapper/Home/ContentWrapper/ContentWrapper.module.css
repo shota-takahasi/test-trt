@@ -32,7 +32,6 @@
 
   display: flex;
   flex-direction: column;
-  gap: 48px;
 
   padding: 0 24px;
   border-right: 1px solid #E1E6EB;
@@ -43,7 +42,6 @@
 
   display: flex;
   flex-direction: column;
-  gap: 48px;
 
   padding: 0 0 0 24px;
 }
@@ -63,4 +61,24 @@
 .bottom {
   margin: 24px 0;
   border: 1px solid #E1E6EB;
+}
+
+.divider:nth-child(even) {
+  padding: 24px 0;
+  border-bottom: 1px solid #E1E6EB;
+}
+
+.divider:nth-child(odd) {
+  padding: 24px 0;
+  border-bottom: 1px solid #E1E6EB;
+}
+
+.divider:first-child {
+  padding: 0 0 24px 0;
+  border-bottom: 1px solid #E1E6EB;
+}
+
+.divider:nth-last-child(1) {
+  padding: 24px 0 0 0;
+  border-bottom: none;
 }
