@@ -13,7 +13,7 @@ export const ContentWrapper = () => {
           />
 
           <div className={styles.mainTitle}>
-            Azerbaijan issues final warning to Armenia in Karabakh clashes
+            Demo issues final warning to Armenia in Karabakh clashes
           </div>
         </div>
 
