@@ -54,6 +54,20 @@
   padding-left: 24px;
 }
 
+@media (width <= 1024px) {
+  .detail {
+    padding: 24px 0 0 0;
+  }
+}
+
+@media (width <= 640px) {
+  .detail {
+    flex-direction: column;
+
+    padding: 24px 0 0 0;
+  }
+}
+
 .info:nth-child(1) {
   width: 100%;
 
@@ -64,6 +78,14 @@
   border-right: 1px solid #E1E6EB;
 }
 
+@media (width <= 640px) {
+  .info:nth-child(1) {
+    padding: 0 0 24px 0;
+    border: none;
+    border-bottom: 1px solid #E1E6EB;
+  }
+}
+
 .info:nth-child(2) {
   width: 100%;
 
@@ -71,6 +93,12 @@
   flex-direction: column;
 
   padding: 0 0 0 24px;
+}
+
+@media (width <= 640px) {
+  .info:nth-child(2) {
+    padding: 24px 0 0 0;
+  }
 }
 
 .mainImage {
