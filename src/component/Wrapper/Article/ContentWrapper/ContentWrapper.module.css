@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  width: 70%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  padding-right: 24px;
+  border-right: 1px solid #E1E6EB;
+}
+
+.related {
+  width: 30%;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 24px;
+}
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.topicImage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.topicTitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: #A0A5AA;
+}
+
+.topicDescription {
+  font-size: 14px;
+  font-weight: 400;
+  color: #63676C;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+
+  padding: 0 48px;
+}
