@@ -5,6 +5,12 @@
   flex-direction: row;
 }
 
+@media (width <= 1024px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 .content {
   width: 75%;
 
@@ -16,6 +22,15 @@
   border-right: 1px solid #E1E6EB;
 }
 
+@media (width <= 1024px) {
+  .content {
+    width: 100%;
+
+    padding: 0;
+    border: none;
+  }
+}
+
 .related {
   width: 25%;
 
@@ -24,6 +39,12 @@
   gap: 24px;
 
   padding-left: 24px;
+}
+
+@media (width <= 1024px) {
+  .related {
+    display: none;
+  }
 }
 
 .topic {
@@ -55,6 +76,18 @@
   color: black;
 
   padding: 0 48px;
+}
+
+@media (width <= 1024px) {
+  .description {
+    padding: 0 24px;
+  }
+}
+
+@media (width <= 640px) {
+  .description {
+    padding: 0 12px;
+  }
 }
 
 .relatedTitle {
