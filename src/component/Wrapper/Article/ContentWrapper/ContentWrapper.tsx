@@ -1,3 +1,4 @@
+import { RelatedArticleCard } from "@/component";
 import styles from "./ContentWrapper.module.css";
 
 export const ContentWrapper = () => {
@@ -27,7 +28,16 @@ export const ContentWrapper = () => {
         <div className={styles.tag}></div>
       </div>
 
-      <div className={styles.related}></div>
+      <div className={styles.related}>
+        <div className={styles.relatedTitle}>
+          Related
+        </div>
+
+        <RelatedArticleCard />
+        <RelatedArticleCard />
+        <RelatedArticleCard />
+        <RelatedArticleCard />
+      </div>
     </div>
   );
 };

@@ -8,7 +8,7 @@
 }
 
 .content {
-  width: 70%;
+  width: 75%;
 
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 }
 
 .space {
-  width: 30%;
+  width: 25%;
 }
 
 .title {
