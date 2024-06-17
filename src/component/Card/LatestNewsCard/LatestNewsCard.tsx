@@ -10,11 +10,11 @@ export const LatestNewsCard = (props: { data: any, order: number }) => {
 
       <div className={styles.content}>
         <div className={styles.title}>
-          {props?.data?.title}
+          {props?.data?.type}
         </div>
 
         <div className={styles.description}>
-          {props?.data?.description}
+          {props?.data?.title}
         </div>
       </div>
     </Link>

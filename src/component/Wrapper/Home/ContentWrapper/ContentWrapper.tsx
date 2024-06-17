@@ -1,31 +1,33 @@
 import { AuthorNewsCard, NormalNewsCard, TopicNewsCard } from "@/component";
 import styles from "./ContentWrapper.module.css";
 
-export const ContentWrapper = () => {
+export const ContentWrapper = (props: { headline: any, news: any }) => {
+  const [ headline ] = props?.headline;
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.section}>
           <img
             className={styles.mainImage}
-            src="https://cdn-i.pr.trt.com.tr/trtworld/16358427_0-57-8256-4649.jpeg"
+            src={headline?.mainImageUrl}
             alt="main"
           />
 
           <div className={styles.mainTitle}>
-            Demo issues final warning to Armenia in Karabakh clashes
+            {headline?.title}
           </div>
         </div>
 
         <div className={styles.detail}>
           <div className={styles.info}>
-            <div className={styles.divider}>
-              <NormalNewsCard />
-            </div>
-
-            <div className={styles.divider}>
-              <NormalNewsCard />
-            </div>
+            {props?.news && props?.news.map((item: any) => {
+              return (
+                <div key={crypto.randomUUID()} className={styles.divider}>
+                  <NormalNewsCard data={item} />
+                </div>
+              );
+            })}
           </div>
 
           <div className={styles.info}>

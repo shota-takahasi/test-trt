@@ -15,7 +15,9 @@ const nextConfig = {
         hostname: "https://images-cdn.trtworld.com"
       }
     ]
-  }
+  },
+  productionBrowserSourceMaps: true,
+  reactStrictMode: true
 };
 
 export default nextConfig;
